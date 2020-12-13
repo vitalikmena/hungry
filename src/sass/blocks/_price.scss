@@ -1,0 +1,81 @@
+.price {
+    padding-top: 100px ;
+    padding-bottom: 50px;
+    max-height: auto;
+    min-height: 920px;
+    &__title {
+        font-size: 36px;
+        line-height: 48px;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Banny Round';
+    }
+    &__divider {
+        position: absolute;
+        margin: 5px 0;
+        content: '';
+        width: 60px;
+        height: 5px;
+        background: $main-color;
+        border-radius: 5px;
+        left: 50%;
+        transform: translateX(-50%);    
+    }
+    &__subtitle {
+        padding-top: 30px;
+        line-height: 28px;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+
+    }
+    &__tabs{
+        margin-top: 50px;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        :nth-child(7){
+            border: none;
+            }  
+        }
+        &__tab {
+        width: 120px;
+        height: 50px;
+        font-size: 12px;
+        line-height: 48px;
+        text-transform: uppercase;
+        text-align: center;
+        border-right: 1px solid rgba(51, 51, 51, 0.2);   
+        &:hover {
+            box-shadow: 0 0 10px $main-color;
+            transition: .6s all;
+            cursor: pointer;
+            
+        }
+        &_active {
+            box-shadow: 0 0 10px $main-color;
+            
+            
+            
+        }
+    }
+    &__content {
+        padding-top: 51px;
+        display: none;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 66px;
+        column-gap: 87px;
+        row-gap: 20px;
+        &_active {
+            display: grid;
+        }
+        &-descr {
+            font-size: 18px;
+            font-family: 'Banny Round';
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+}

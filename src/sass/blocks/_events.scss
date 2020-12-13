@@ -1,0 +1,101 @@
+.events {
+    background: url('../../img/specialty\'s-bg.jpg')  center (center/cover) no-repeat;
+    min-height: 675px;
+    padding-bottom: 100px;
+    &__subtitle {
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #ffffff;
+        text-align: center;
+        padding-top: 50px;
+        letter-spacing: 0.5em;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 475px 475px;
+        justify-content: center;
+        align-items: center;
+        column-gap: 90px;
+        padding-top: 50px;
+    }
+    &__weddings{
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            width: 250px;
+            height: 250px; 
+            border-radius: 5px;
+            border: 20px solid $main-color;
+            top: 25%;
+            left: -25%;
+        }     
+        &:after {
+            content:'';
+            position: absolute;
+            width: 80px;
+            height: 475px;
+            background-color: #000;
+            top: 0;
+            right: 0;
+        }
+        &-descr {
+            position: absolute;
+            text-indent: 20px;
+            text-transform: uppercase;
+            font-family: 'Banny Round';
+            font-size: 24px;
+            color: #fff;
+            top: 70px;
+            transform: rotate(90deg);
+            right: -33px;
+            z-index: 2;
+
+        }
+    }
+    &__corporate{
+        position: relative;
+        &:before {
+            content:'';
+            position: absolute;
+            width: 80px;
+            height: 471px;
+            background-color: #000;
+        }
+        &-descr {
+            position: absolute;
+            text-indent: 20px;
+            text-transform: uppercase;
+            font-family: 'Banny Round';
+            font-size: 24px;
+            color: #fff;
+            bottom: 130px;
+            transform: rotate(-90deg);
+            left: -95px;
+            z-index: 2;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            width: 250px;
+            height: 250px; 
+            border-radius: 5px;
+            border: 20px solid $main-color;
+            top: 25%;
+            right: -25%;
+        }     
+    }
+    &__contacts {
+        margin-top: 50px;
+        text-align: center;
+        align-items: center;
+        color: rgba(255, 255, 255, 0.5);
+        span{
+            font-weight: 700;
+        }
+    }
+    
+    
+}

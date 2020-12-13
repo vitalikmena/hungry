@@ -1,0 +1,28 @@
+.social {
+        position: absolute;
+        right: 40px;
+        top: 340px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        
+
+    &_item{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        border: 2px solid #ffffff;
+        border-radius: 100%;
+        margin: 20px 15px;
+        &:hover {
+            color: #ffffff;
+            text-decoration: none;
+            background-color: $main-color;
+            transition: all 0.6s;
+        }
+        
+    }
+}

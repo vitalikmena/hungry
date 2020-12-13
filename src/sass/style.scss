@@ -1,0 +1,52 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+
+@import 'base/variables';
+@import 'base/mixins';
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+   
+
+    @font-face {
+    font-family: 'Banny Light Round';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Banny Light Round'), url('../fonts/Banny-LightRound.woff') format('woff');
+    }
+    
+    @font-face {
+        font-family: 'Banny Round';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Banny Round'), url('../fonts/Banny-Round.woff') format('woff');
+        }
+
+    @font-face {
+    font-family: 'Banny Bold Round';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Banny Bold Round'), url('../fonts/Banny-BoldRound.woff') format('woff');
+    }
+
+.container {
+width: 1280px;
+margin: 0 auto;
+}
+
+@import 'blocks/promo';
+@import 'blocks/title';
+@import 'blocks/sidepanel';
+@import 'blocks/social';
+@import 'blocks/about';
+@import 'blocks/team';
+@import 'blocks/booking';
+@import 'blocks/carousel';
+@import 'blocks/price';
+@import 'blocks/events';
+@import 'blocks/gallery';
+@import 'blocks/contact';
+@import 'blocks/footer';
