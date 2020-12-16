@@ -3,7 +3,7 @@
 
 
 @import 'base/variables';
-@import 'base/mixins';
+/* @import 'base/mixins'; */
 * {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
@@ -37,8 +37,10 @@ width: 1280px;
 margin: 0 auto;
 }
 
+
+
 @import 'blocks/promo';
-@import 'blocks/title';
+/* @import 'blocks/title'; */
 @import 'blocks/sidepanel';
 @import 'blocks/social';
 @import 'blocks/about';
@@ -50,3 +52,4 @@ margin: 0 auto;
 @import 'blocks/gallery';
 @import 'blocks/contact';
 @import 'blocks/footer';
+@import 'blocks/media';

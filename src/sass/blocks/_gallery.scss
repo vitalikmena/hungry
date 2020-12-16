@@ -1,17 +1,16 @@
 .gallery {
     
     &__wrapper{
-    display: grid;
-    grid-template: repeat(1, 360px) / repeat(4, 360px);
-
-    gap: 0;
-    &__item{
+        display: grid;
+        grid-template: repeat(1, 360px) / repeat(4, 360px);
+        gap: 0;
+        &__item{
     img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
-}
+        }
 
     }
 }

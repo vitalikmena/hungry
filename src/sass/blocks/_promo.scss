@@ -44,6 +44,7 @@
         text-transform: uppercase;
         color: #ffffff;
         font-family: 'Banny Round';
+        font-size: 98px;
     }
     &__divider {
         position: absolute;
@@ -64,9 +65,10 @@
         margin-top: 41px;   
         left: 50%;
         transform: translateX(1.5%); 
-       
+      
     }
     &__link {
+        
         color: #ffffff;
         margin-right: 40px;
         font-weight: bold;
@@ -76,6 +78,7 @@
         text-align: center;
         padding: 1em ;
         border-radius: 5px;
+        
         &:hover {
             color: #ffffff;
             text-decoration: none;

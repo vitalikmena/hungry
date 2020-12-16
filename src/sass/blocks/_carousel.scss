@@ -27,14 +27,24 @@
     }
     &__photo {
         position: relative;
-        @include before_circle;
+        &:before {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            width: 250px;
+            height: 250px; 
+            border-radius: 5px;
+            border: 20px solid $main-color;
+            top: 30%;
+            left: -113px;
+        }
         img {
             border-radius: 5px;
         }
     }
     
     &__descr {
-        width: 600px;
+        width: 100%;
         text-align: center;
         color: #ffffff;
         margin-top: 100px;
