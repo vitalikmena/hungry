@@ -642,9 +642,19 @@
     }
 
     .contact {
+        padding-bottom: 40px;
         &__form {
             display: block;
-
+    }
+    &__triggers{
+        display: block;
+        
+        
+       
+    }
+    &__btn {
+        width: 100%;
+        height: 40px;
     }
 }
 }
